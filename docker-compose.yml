@@ -1,14 +1,16 @@
-version: "3.5"
+version: "3.3"
 services:
   web:
     image: tableau-web-vue_v1.0.0
+    container_name: tableau-web-vue
     build:
         context: .
         dockerfile: ./Dockerfile
     ports:
-      - 8080:8081
-    expose:
-      - 4200
-    command: sh -c "npm install && npm run serve"
+      - 80:80
+    # command: sh -c "npm install && npm run serve"
     volumes:
       - ".:/app"
+      - '/app/node_modules'
+    environment:
+      - CHOKIDAR_USEPOLLING=true
