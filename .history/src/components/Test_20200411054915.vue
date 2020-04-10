@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="display-4 text-center">Test by Suchat {{info}}</div>
-        <p>{{ info }} + {{ url }}</p>
+        <p>{{ info }}</p>
     </div>
 </template>
 

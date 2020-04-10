@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="display-4 text-center">Test by Suchat {{info}}</div>
-        <p>{{ info }} + {{ url }}</p>
+        <p>{{ info }}</p>
     </div>
 </template>
 
@@ -10,12 +10,11 @@ export default {
    name: 'Test',
    data() {
        return {
-           info: 'xxx',
-           url: process.env.VUE_APP_URL
+           info: 'xxx'
        }
    },
    mounted() {
-       console.log('kai :: ' + process.env.VUE_APP_URL)
+       console.log('kai' + process.env.VUE_APP_URL)
    }
 }
 </script>
