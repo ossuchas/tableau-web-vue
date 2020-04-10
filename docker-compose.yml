@@ -2,7 +2,6 @@ version: "3.3"
 services:
   web:
     image: docker.io/apthailand/suchat_s:tableau-web-vue_v1.0.1
-    #container_name: tableau-web-vue
     build:
         context: .
         dockerfile: ./Dockerfile
