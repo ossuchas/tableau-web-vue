@@ -26,11 +26,11 @@ export default {
        }
    },
    mounted() {
-       console.log('kai :: ' + process.env.VUE_APP_URL)
+    //    console.log('kai :: ' + process.env.VUE_APP_URL)
        
        axios.get('https://test-apchatbotapi.apthai.com/api/v1/genticket')
         .then(response => {
-            console.log(response)
+            // console.log(response)
             // this.url = "http://dashboard.apthai.com/trusted/" + response.data['message']+ "/t/CRM/views/LLWalkByBG/DS_LLWalkBG?:embed=yes&:toolbar=no&:tabs=no"
             this.url = "http://dashboard.apthai.com/trusted/" + response.data['message']+ "/t/CRM/views/LLWalkByBG/Res_WalkBG2?:embed=yes&:toolbar=no&:tabs=no"
             // this.url = "/trusted/" + response.data['message']+ "/t/CRM/views/LLWalkByBG/DS_LLWalkBG?:embed=yes&:toolbar=no&:tabs=no"
