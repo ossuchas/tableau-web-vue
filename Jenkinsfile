@@ -3,7 +3,7 @@ pipeline {
     registry = "apthailand/suchat_s"
     registryCredential = 'docker_ossuchas'
     dockerImage = ''
-    image_tag_number = 'tableau-web-vue_v1.0.10'
+    image_tag_number = 'tableau-web-vue_v2.0.0'
     deployments = 'tableauwebapp'
     projects = 'testrepo'
   }

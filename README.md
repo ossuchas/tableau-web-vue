@@ -23,3 +23,6 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 "# tableau-web-vue" 
+
+### command deploy
+git2docker.sh "comment" tableauwebapp
