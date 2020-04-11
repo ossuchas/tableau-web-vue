@@ -27,5 +27,10 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 # production environment
 FROM nginx:1.16.0-alpine
 COPY --from=build /app/dist /usr/share/nginx/html
+
+RUN rm /etc/nginx/conf.d/default.conf
+COPY  app.conf /etc/nginx/conf.d/app.conf
+
 EXPOSE 80
+
 CMD ["nginx", "-g", "daemon off;"]
