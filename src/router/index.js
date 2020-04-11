@@ -22,7 +22,16 @@ Vue.use(VueRouter)
   {
     path: '/test',
     name: 'Test',
-    component: Test
+    component: Test,
+    beforeEnter: (to, from, next) => {
+      const { uri } = to.query;
+      if (uri != null && uri != '/') {
+          next(false);
+          router.push(uri);
+      } else {
+          next();
+      }
+  }
   }
 ]
 
