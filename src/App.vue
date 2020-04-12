@@ -9,6 +9,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  beforeCreate () {
+    this.$liff.init({
+      liffId: '1653928950-yZr4g9xQ'
+    });
+  }
+}
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

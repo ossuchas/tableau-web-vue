@@ -6,8 +6,9 @@ import store from './store'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+Vue.prototype.$liff = window.liff
 Vue.config.productionTip = false
-console.log(process.env.VUE_APP_URL)
+// console.log(process.env.VUE_APP_URL)
 
 new Vue({
   router,
