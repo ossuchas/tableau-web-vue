@@ -40,25 +40,29 @@ export default {
     closeWindow () {
       this.$liff.closeWindow()
     },
-    getProfile () {
+    async getProfile () {
       let _this = this
-      this.$liff.getProfile().then(function (profile) {
+      await this.$liff.getProfile().then(function (profile) {
         _this.profile = profile
       }).catch(function (error) {
         alert('Error getting profile: ' + error)
       })
     },
-    sendMessage () {
-      this.$liff.sendMessages([
-        {
+    async sendMessage () {
+      // this.$liff.sendMessages([ {
+      //     type: 'text',
+      //     text: 'You/\'ve successfully sent a message! Hooray!'
+      //   }
+      // ]).then(function () {
+      //   window.alert('Message sent')
+      // }).catch(function (error) {
+      //   window.alert('Error sending message: ' + error)
+      // })
+      await this.$liff.sendMessages([{
           type: 'text',
-          text: 'You/\'ve successfully sent a message! Hooray!'
+          text: 'test'
         }
-      ]).then(function () {
-        window.alert('Message sent')
-      }).catch(function (error) {
-        window.alert('Error sending message: ' + error)
-      })
+      ]);
       
       this.$liff.closeWindow()
     }
