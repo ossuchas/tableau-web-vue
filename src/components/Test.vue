@@ -32,7 +32,7 @@ export default {
         .then(response => {
             console.log(response)
             // this.url = "http://dashboard.apthai.com/trusted/" + response.data['message']+ "/t/CRM/views/LLWalkByBG/DS_LLWalkBG?:embed=yes&:toolbar=no&:tabs=no"
-            this.url = "http://dashboard.apthai.com/trusted/" + response.data['message']+ "/t/CRM/views/LLWalkByBG/Res_WalkBG2?:embed=yes&:toolbar=no&:tabs=no"
+            this.url = "http://dashboard.apthai.com/trusted/" + response.data['message']+ "/t/CRM/views/LLWalkByBG/Res_WalkBG2?:refresh=true&:embed=yes&:toolbar=no&:tabs=no"
             // this.url = "http://dashboard.apthai.com/trusted/" + response.data['message']+ "/t/CRM/views/Visitor_Analysis/VisitorAnalysis?:embed=yes&:toolbar=no&:tabs=no"
             // this.url = "/trusted/" + response.data['message']+ "/t/CRM/views/LLWalkByBG/DS_LLWalkBG?:embed=yes&:toolbar=no&:tabs=no"
         });
