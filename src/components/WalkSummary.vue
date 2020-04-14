@@ -16,7 +16,7 @@ export default {
    name: 'WalkSummary',
    data() {
        return {
-           viewname: 'WalkSummary',
+           viewname: 'Walk Summary by BG',
            ticket: '',
            url: ''
        }
