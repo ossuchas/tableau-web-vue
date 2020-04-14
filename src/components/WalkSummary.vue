@@ -16,6 +16,7 @@ export default {
    name: 'WalkSummary',
    data() {
        return {
+           viewname: 'WalkSummary',
            ticket: '',
            url: ''
        }
@@ -30,7 +31,9 @@ export default {
    },
    created() {
        /* API Write Log to Use */
-       axios.post('/addlogchatbot').then(response => {
+       axios.post('/addlogchatbot', {
+           name: this.viewname
+       }).then(response => {
            console.log(response.data);
        });
    }
