@@ -6,6 +6,7 @@ import axios from 'axios'
 
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import vuetify from './plugins/vuetify';
 
 Vue.prototype.$liff = window.liff
 Vue.config.productionTip = false
@@ -15,5 +16,6 @@ axios.defaults.baseURL = process.env.VUE_APP_URL
 new Vue({
   router,
   store,
+  vuetify,
   render: h => h(App)
 }).$mount('#app')

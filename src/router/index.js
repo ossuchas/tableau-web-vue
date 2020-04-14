@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Test from '../components/Test.vue'
+import WalkSummary from '../components/WalkSummary.vue';
 
 Vue.use(VueRouter)
 
@@ -22,16 +23,12 @@ Vue.use(VueRouter)
   {
     path: '/test',
     name: 'Test',
-    component: Test,
-    beforeEnter: (to, from, next) => {
-      const { uri } = to.query;
-      if (uri != null && uri != '/') {
-          next(false);
-          router.push(uri);
-      } else {
-          next();
-      }
-  }
+    component: Test
+  },
+  {
+    path: '/walksummary',
+    name: 'WalkSummary',
+    component: WalkSummary
   }
 ]
 

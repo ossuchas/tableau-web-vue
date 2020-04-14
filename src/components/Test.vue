@@ -5,12 +5,17 @@
             <iframe class="embed-responsive-item" :src="url" width="100%" height="100%"></iframe>
         </div> -->
         <!-- <div class="embed-responsive embed-responsive-1by1" style="height: 2048px"> -->
-        <div class="resp-container">
-            <!-- <iframe class="embed-responsive-item" :src="url"></iframe> -->
-            <!-- <ifram class="resp-iframe" :src="url" allowfullscreen></ifram> -->
+        <!-- <div class="resp-container">
             <iframe class="embed-responsive-item resp-iframe" :src="url" width="375" height="1000px" frameborder="0" scrolling="no" allowfullscreen></iframe>
-        </div>
+        </div> -->
     <!-- </div> -->
+    <v-container>
+        <v-row class="text-center">
+            <v-col cols="12">
+                <iframe class="embed-responsive-item resp-iframe" :src="url" width="375" height="1000px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
 
 <script>
