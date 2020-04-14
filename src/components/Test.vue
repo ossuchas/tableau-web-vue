@@ -39,7 +39,7 @@ export default {
             // console.log(response)
             var ticket = response.data['message']
             // this.url = "http://dashboard.apthai.com/trusted/" + response.data['message']+ "/t/CRM/views/LLWalkByBG/Res_WalkBG2?:refresh=true&:embed=yes&:toolbar=no&:tabs=no"
-            this.url = "http://dashboard.apthai.com/trusted/" + ticket + "/t/CRM/views/LLWalkByBG/Res_WalkBG2?:refresh=true&:embed=yes&:toolbar=no&:tabs=no"
+            this.url = "http://dashboard.apthai.com/trusted/" + ticket + "/t/CRM/views/LLWalkByBG/Res_WalkBG3?:refresh=true&:embed=yes&:toolbar=no&:tabs=no"
         });
    }
 }

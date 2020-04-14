@@ -25,7 +25,7 @@ export default {
        axios.get('/genticket')
         .then(response => {
             var ticket = response.data['message'];
-            this.url = process.env.VUE_APP_TABLEAU_URL + "/" + ticket + "/t/CRM/views/LLWalkByBG/Res_WalkBG2?:refresh=true&:embed=yes&:toolbar=no&:tabs=no"
+            this.url = process.env.VUE_APP_TABLEAU_URL + "/" + ticket + "/t/CRM/views/LLWalkByBG/Res_WalkBG3?:refresh=true&:embed=yes&:toolbar=no&:tabs=no"
         });
    },
    created() {
