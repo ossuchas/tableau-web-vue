@@ -27,7 +27,8 @@ export default {
        return {
            info: 'Test Tableau Viewer',
            url: null,
-           ticket: null
+           ticket: null,
+           displayName: this.$store.getters.fullName
        }
    },
    mounted() {

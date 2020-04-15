@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Test from '../components/Test.vue'
 import WalkSummary from '../components/WalkSummary.vue';
+import ChatbotLog from '../components/ChatbotLog.vue';
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,11 @@ Vue.use(VueRouter)
     path: '/walksummary',
     name: 'WalkSummary',
     component: WalkSummary
+  },
+  {
+    path: '/logchatbot',
+    name: 'ChatbotLog',
+    component: ChatbotLog
   }
 ]
 
