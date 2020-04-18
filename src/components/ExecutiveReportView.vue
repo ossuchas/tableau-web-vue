@@ -47,6 +47,9 @@ export default {
       activeBtn: 0,
     };
   },
+  created() {
+    console.log(process.env.NODE_ENV);
+  },
   components: {
     ExecutiveReportViewYTD,
     ExecutiveReportViewQTD,
@@ -55,9 +58,6 @@ export default {
   methods: {
     viewDashboard: function(value) {
       this.activeBtn = value;
-      if (this.activeBtn === 1) {
-        this.viewTableau();
-      }
     },
   },
 };
