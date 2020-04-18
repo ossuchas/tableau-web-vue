@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Test from '../components/Test.vue'
 import WalkSummary from '../components/WalkSummary.vue';
 import ChatbotLog from '../components/ChatbotLog.vue';
+import ExecutiveReportView from '../components/ExecutiveReportView.vue';
 
 Vue.use(VueRouter)
 
@@ -35,6 +36,11 @@ Vue.use(VueRouter)
     path: '/logchatbot',
     name: 'ChatbotLog',
     component: ChatbotLog
+  },
+  {
+    path: '/exrptview',
+    name: 'ExecutiveReportView',
+    component: ExecutiveReportView
   }
 ]
 
