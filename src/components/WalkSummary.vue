@@ -29,12 +29,13 @@ export default {
         });
    },
    created() {
-       /* API Write Log to Use */
-       axios.post('/addlogchatbot', {
-           name: this.viewname
-       }).then(response => {
-           console.log(response.data);
-       });
+       if (process.env.NODE_ENV === "production") {
+           /* API Write Log to Use */
+           axios.post('/addlogchatbot', {name: this.viewname})
+           .then(response => {
+               console.log(response.data);
+           });
+       }
    }
 }
 </script>

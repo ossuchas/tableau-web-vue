@@ -25,7 +25,17 @@ export default {
     return {
       url: "",
       ticket: "",
+      viewname: "Executive Report Viewer QTD",
     };
+  },
+  created() {
+    if (process.env.NODE_ENV === "production") {
+      /* API Write Log to Use */
+      axios.post("/addlogchatbot", {name: this.viewname})
+      .then((response) => {
+          console.log(response.data);
+        });
+    }
   },
   mounted() {
     axios.get("/genticket").then((response) => {
