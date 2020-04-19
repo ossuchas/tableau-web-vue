@@ -1,6 +1,10 @@
 <template>
   <v-container fluid>
     <v-bottom-navigation :value="activeBtn" grow color="teal">
+      <v-btn @click="viewDashboard(4)">
+        <span>By Week</span>
+        <v-icon>mdi-heart</v-icon>
+      </v-btn>
       <v-btn @click="viewDashboard(1)">
         <span>Week</span>
         <!-- <v-icon>mdi-today</v-icon> -->
@@ -57,6 +61,9 @@
       </v-btn>
     </v-bottom-navigation>
     <v-row class="text-center">
+      <v-col cols="12" v-if="activeBtn === 4">
+        <ExecutiveReportViewByWTD />
+      </v-col>
       <v-col cols="12" v-if="activeBtn === 1">
         <ExecutiveReportViewWTD />
       </v-col>
@@ -74,6 +81,7 @@
 import ExecutiveReportViewYTD from "../components/ExecutiveReportViewYTD.vue";
 import ExecutiveReportViewQTD from "../components/ExecutiveReportViewQTD.vue";
 import ExecutiveReportViewWTD from "../components/ExecutiveReportViewWTD.vue";
+import ExecutiveReportViewByWTD from "../components/ExecutiveReportViewByWTD.vue";
 import axios from 'axios';
 
 export default {
@@ -97,6 +105,8 @@ export default {
     ExecutiveReportViewYTD,
     ExecutiveReportViewQTD,
     ExecutiveReportViewWTD,
+    ExecutiveReportViewByWTD
+
   },
   methods: {
     viewDashboard: function(value) {
