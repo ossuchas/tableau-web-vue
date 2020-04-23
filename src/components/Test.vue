@@ -37,7 +37,7 @@
         <h2>Click#2</h2>
       </v-col>
       <v-col cols="12" v-if="activeBtn === 3">
-        <h2>Click#3</h2>
+        <h2>Click#3 ทดสอบ</h2>
       </v-col>
     </v-row>
   </v-container>
@@ -95,7 +95,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .resp-container {
   position: relative;
   overflow: hidden;
@@ -105,5 +105,8 @@ export default {
 .resp-iframe {
   border: 0;
   overflow: hidden;
+}
+.h2 {
+  font-family: 'AP-Regular' !important;
 }
 </style>

@@ -64,5 +64,6 @@ export default {
 .v-application .primary {
     background-color: #c92028 !important;
     border-color: #c92028 !important;
+    font-family: AP-Regular;
 }
 </style>
