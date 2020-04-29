@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Test from '../components/Test.vue'
 import WalkSummary from '../components/WalkSummary.vue';
+import WalkSummaryByBG from '../components/WalkSummaryByBG.vue';
+import WalkSummaryBySubBG from '../components/WalkSummaryBySubBG.vue';
 import ChatbotLog from '../components/ChatbotLog.vue';
 import ExecutiveReportView from '../components/ExecutiveReportView.vue';
 
@@ -41,6 +43,16 @@ Vue.use(VueRouter)
     path: '/exrptview',
     name: 'ExecutiveReportView',
     component: ExecutiveReportView
+  },
+  {
+    path: '/walkbg',
+    name: 'WalkSummaryByBG',
+    component: WalkSummaryByBG
+  },
+  {
+    path: '/walksubbg',
+    name: 'WalkSummaryBySubBG',
+    component: WalkSummaryBySubBG
   }
 ]
 

@@ -88,7 +88,7 @@ export default {
         this.url =
           "http://dashboard.apthai.com/trusted/" +
           ticket +
-          "/t/CRM/views/DashboardExecutive/DSExRptMViewYTD?:refresh=true&:embed=yes&:toolbar=no&:tabs=no";
+          "/t/CRM/views/WalkSummaryByBG/DSWalkKPIBySubBG?:refresh=true&:embed=yes&:toolbar=no&:tabs=no";
       });
     },
   },
