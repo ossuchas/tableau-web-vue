@@ -12,10 +12,10 @@
 import axios from 'axios';
 
 export default {
-   name: 'WalkSummary',
+   name: 'WalkSummaryBySubBG',
    data() {
        return {
-           viewname: 'Walk Summary by BG',
+           viewname: 'Walk Summary by SubBG vs Target',
            ticket: '',
            url: ''
        }
