@@ -31,7 +31,6 @@ export default {
             var ticket = response.data['message'];
             this.url = process.env.VUE_APP_TABLEAU_URL + "/" + ticket 
             + 
-            // "/t/CRM/views/WalkSummaryByBG/DSWalkKPIBySubBG?:refresh=true&:embed=yes&:toolbar=no&:tabs=no"
             "/t/CRM/views/WalkSummaryByBG/DSWalkKPIBySubBG4Sub?:refresh=true&:embed=yes&:toolbar=no&:tabs=no&pTypeDesc=" + this.bg;
         });
    },
