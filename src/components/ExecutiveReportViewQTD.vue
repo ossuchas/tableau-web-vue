@@ -26,11 +26,16 @@ export default {
       url: "",
       ticket: "",
       viewname: "Executive Report Viewer QTD",
+      userid: ''
     };
   },
   created() {
+    this.userId = this.$route.query.userId
     /* API Write Log to Use */
-    axios.post("/addlogchatbot", {name: this.viewname})
+    axios.post("/addlogchatbot", {
+      name: this.viewname,
+      userid: this.userId
+      })
     .then((response) => {
       console.log(response.data);
     });

@@ -56,12 +56,18 @@ export default {
       // ticket: null,
       displayName: this.$store.getters.fullName,
       activeBtn: 0,
+      parameters: ''
     };
   },
   // computed: {
   //   ...mapState(['ticket'])
   // },
   mounted() {
+    // this.parameters = this.$route.query
+    // console.log(this.parameters)
+    this.parameters = this.$route.query.pTypeDesc
+
+    console.log(this.parameters)
     // this.$store.dispatch('loadTicket');
     // console.log('kai ' + ticket_x);
     // axios.get("/genticket").then((response) => {
@@ -88,7 +94,8 @@ export default {
         this.url =
           "http://dashboard.apthai.com/trusted/" +
           ticket +
-          "/t/CRM/views/WalkSummaryByBG/DSWalkKPIBySubBG?:refresh=true&:embed=yes&:toolbar=no&:tabs=no";
+          "/t/CRM/views/WalkSummaryByBG/DSWalkKPIBySubBG4Sub?:refresh=true&:embed=yes&:toolbar=no&:tabs=no&pTypeDesc=" + this.parameters;
+          // "/t/CRM/views/WalkSummaryByBG/DSWalkKPIBySubBG4Sub?pTypeDesc=2.TH&:iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:showVizHome=no";
       });
     },
   },

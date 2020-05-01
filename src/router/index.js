@@ -7,6 +7,7 @@ import WalkSummaryByBG from '../components/WalkSummaryByBG.vue';
 import WalkSummaryBySubBG from '../components/WalkSummaryBySubBG.vue';
 import ChatbotLog from '../components/ChatbotLog.vue';
 import ExecutiveReportView from '../components/ExecutiveReportView.vue';
+import Dashboard4Indi from '../components/Dashboard4Indi.vue';
 
 Vue.use(VueRouter)
 
@@ -53,6 +54,11 @@ Vue.use(VueRouter)
     path: '/walksubbg',
     name: 'WalkSummaryBySubBG',
     component: WalkSummaryBySubBG
+  },
+  {
+    path: '/ds4indi',
+    name: 'Dashboard4Indi',
+    component: Dashboard4Indi
   }
 ]
 

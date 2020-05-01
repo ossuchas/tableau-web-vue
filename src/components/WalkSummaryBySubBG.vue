@@ -17,7 +17,8 @@ export default {
        return {
            viewname: 'Walk Summary by SubBG vs Target',
            ticket: '',
-           url: ''
+           url: '',
+           userid: ''
        }
    },
    mounted() {
@@ -29,8 +30,12 @@ export default {
         });
    },
    created() {
+       this.userId = this.$route.query.userId
        /* API Write Log to Use */
-       axios.post('/addlogchatbot', {name: this.viewname})
+       axios.post('/addlogchatbot', {
+           name: this.viewname,
+           userid: this.userId
+           })
        .then(response => {
            console.log(response.data);
        });

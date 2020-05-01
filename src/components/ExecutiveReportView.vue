@@ -92,11 +92,16 @@ export default {
       ticket: null,
       activeBtn: 0,
       viewname: "Executive Report Viewer",
+      userid: ''
     };
   },
   created() {
+    this.userId = this.$route.query.userId
     /* API Write Log to Use */
-    axios.post("/addlogchatbot", {name: this.viewname})
+    axios.post("/addlogchatbot", {
+      name: this.viewname,
+      userid: this.userId
+      })
     .then((response) => {
       console.log(response.data);
     });

@@ -17,7 +17,8 @@ export default {
        return {
            viewname: 'Log Chatbot Yesterday',
            ticket: '',
-           url: ''
+           url: '',
+           userid: ''
        }
    },
    mounted() {
@@ -29,9 +30,11 @@ export default {
         });
    },
    created() {
+       this.userId = this.$route.query.userId
        /* API Write Log to Use */
        axios.post('/addlogchatbot', {
-           name: this.viewname
+           name: this.viewname,
+           userid: this.userId
        }).then(response => {
            console.log(response.data);
        });
