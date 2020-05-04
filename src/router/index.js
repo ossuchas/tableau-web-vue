@@ -5,6 +5,7 @@ import Test from '../components/Test.vue'
 import WalkSummary from '../components/WalkSummary.vue';
 import WalkSummaryByBG from '../components/WalkSummaryByBG.vue';
 import WalkSummaryBySubBG from '../components/WalkSummaryBySubBG.vue';
+import WalkSummaryByProj from '../components/WalkSummaryByProj.vue';
 import ChatbotLog from '../components/ChatbotLog.vue';
 import ExecutiveReportView from '../components/ExecutiveReportView.vue';
 import Dashboard4Indi from '../components/Dashboard4Indi.vue';
@@ -59,6 +60,11 @@ Vue.use(VueRouter)
     path: '/ds4indi',
     name: 'Dashboard4Indi',
     component: Dashboard4Indi
+  },
+  {
+    path: '/walkbyproj',
+    name: 'WalkSummaryByProj',
+    component: WalkSummaryByProj
   }
 ]
 

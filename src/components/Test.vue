@@ -56,7 +56,8 @@ export default {
       // ticket: null,
       displayName: this.$store.getters.fullName,
       activeBtn: 0,
-      parameters: ''
+      bg: '',
+      subbg: ''
     };
   },
   // computed: {
@@ -65,9 +66,10 @@ export default {
   mounted() {
     // this.parameters = this.$route.query
     // console.log(this.parameters)
-    this.parameters = this.$route.query.pTypeDesc
+    this.bg = this.$route.query.pTypeDesc
+    this.subbg = this.$route.query.ProjectGroup
 
-    console.log(this.parameters)
+    console.log(this.bg)
     // this.$store.dispatch('loadTicket');
     // console.log('kai ' + ticket_x);
     // axios.get("/genticket").then((response) => {
@@ -94,7 +96,7 @@ export default {
         this.url =
           "http://dashboard.apthai.com/trusted/" +
           ticket +
-          "/t/CRM/views/WalkSummaryByBG/DSWalkKPIBySubBG4Sub?:refresh=true&:embed=yes&:toolbar=no&:tabs=no&pTypeDesc=" + this.parameters;
+          "/t/CRM/views/WalkSummaryByBG/DSWalkKPIByProj?:refresh=true&:embed=yes&:toolbar=no&:tabs=no&pTypeDesc=" + this.bg + "&ProjectGroup=" + this.subbg;
           // "/t/CRM/views/WalkSummaryByBG/DSWalkKPIBySubBG4Sub?pTypeDesc=2.TH&:iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:showVizHome=no";
       });
     },
