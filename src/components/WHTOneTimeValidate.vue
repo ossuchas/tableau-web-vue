@@ -1,5 +1,5 @@
 <template>
-<v-container>
+<v-container class="fontAP">
 <v-row justify="center">
     <v-col cols="12" sm="10" md="8" lg="6">
         <v-card ref="form">
@@ -103,13 +103,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.fontAP {
+  font-family: 'AP';
+}
+
 .darkBlue {
     color: #00008b;
 }
 
 .btn {
     display: inline-block;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'AP';
     width: 100%;
     text-align: center;
     cursor: pointer;
