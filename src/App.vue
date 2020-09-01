@@ -32,7 +32,7 @@
         target="_blank"
         text
       >
-        <span class="mr-2">EMPOWER LIVING</span>
+        <span class="mr-2 text2">EMPOWER LIVING</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
@@ -64,6 +64,10 @@ export default {
 .v-application .primary {
     background-color: #c92028 !important;
     border-color: #c92028 !important;
-    font-family: AP-Regular;
+}
+.text2 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'AP';
 }
 </style>

@@ -9,6 +9,7 @@ import WalkSummaryByProj from '../components/WalkSummaryByProj.vue';
 import ChatbotLog from '../components/ChatbotLog.vue';
 import ExecutiveReportView from '../components/ExecutiveReportView.vue';
 import Dashboard4Indi from '../components/Dashboard4Indi.vue';
+import WHTOneTimeValidate from '../components/WHTOneTimeValidate.vue'
 
 Vue.use(VueRouter)
 
@@ -65,6 +66,11 @@ Vue.use(VueRouter)
     path: '/walkbyproj',
     name: 'WalkSummaryByProj',
     component: WalkSummaryByProj
+  },
+  {
+    path: '/whtonetime',
+    name: 'WHTOneTimeValidate',
+    component: WHTOneTimeValidate
   }
 ]
 
