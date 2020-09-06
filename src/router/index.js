@@ -9,7 +9,8 @@ import WalkSummaryByProj from '../components/WalkSummaryByProj.vue';
 import ChatbotLog from '../components/ChatbotLog.vue';
 import ExecutiveReportView from '../components/ExecutiveReportView.vue';
 import Dashboard4Indi from '../components/Dashboard4Indi.vue';
-import WHTOneTimeValidate from '../components/WHTOneTimeValidate.vue'
+import WHTOneTimeValidate from '../components/WHTOneTimeValidate.vue';
+import Test2 from '../components/Test2';
 
 Vue.use(VueRouter)
 
@@ -71,6 +72,11 @@ Vue.use(VueRouter)
     path: '/whtonetime',
     name: 'WHTOneTimeValidate',
     component: WHTOneTimeValidate
+  },
+  {
+    path: '/test2',
+    name: 'Test2',
+    component: Test2
   }
 ]
 
