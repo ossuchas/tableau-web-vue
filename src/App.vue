@@ -5,7 +5,7 @@
       color="primary"
       dark
     >
-      <div class="d-flex align-center">
+      <!-- <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
           class="shrink mr-2"
@@ -23,7 +23,7 @@
           src="https://i.ibb.co/crLYCHt/text-apthai.png"
           width="100"
         />
-      </div>
+      </div> -->
 
       <v-spacer></v-spacer>
 

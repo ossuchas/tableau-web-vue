@@ -10,6 +10,7 @@ import ChatbotLog from '../components/ChatbotLog.vue';
 import ExecutiveReportView from '../components/ExecutiveReportView.vue';
 import Dashboard4Indi from '../components/Dashboard4Indi.vue';
 import WHTOneTimeValidate from '../components/WHTOneTimeValidate.vue';
+import LLDashboardbyProj from '../components/LLDashboardByProj.vue';
 import Test2 from '../components/Test2';
 
 Vue.use(VueRouter)
@@ -67,6 +68,11 @@ Vue.use(VueRouter)
     path: '/walkbyproj',
     name: 'WalkSummaryByProj',
     component: WalkSummaryByProj
+  },
+  {
+    path: '/llbyproj',
+    name: 'LLDashboardByProj',
+    component: LLDashboardbyProj
   },
   {
     path: '/whtonetime',
