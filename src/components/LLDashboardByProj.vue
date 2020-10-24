@@ -22,7 +22,8 @@ export default {
        }
    },
    mounted() {
-       this.userid = "U087b2673fb770b30b0ff1f8bd2768451"
+       this.userId = this.$route.query.userId
+    //    this.userid = "U087b2673fb770b30b0ff1f8bd2768451"
        /* API Get ticket to authorized tableau */
        axios.get('/genticket')
         .then(response => {
