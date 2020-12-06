@@ -61,13 +61,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "node_modules/bootstrap/scss/bootstrap";
 .v-application .primary {
     background-color: #c92028 !important;
     border-color: #c92028 !important;
 }
-.emp_txt {
-  font-size: 18px;
-  font-weight: bold;
-  font-family: 'AP';
-}
+// .emp_txt {
+//   font-size: 18px;
+//   font-weight: bold;
+//   font-family: 'AP';
+// } 
+// $primary: #c92028;
+@font-face {
+  font-family: "AP";
+  src: local("AP"),
+  url(./fonts/AP/AP-Regular.ttf) format("truetype");
+  }
 </style>

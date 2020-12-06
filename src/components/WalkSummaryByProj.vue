@@ -21,11 +21,11 @@ export default {
            userid: '',
            bg: '',
            subbg: ''
-       }
+       };
    },
    mounted() {
-       this.bg = this.$route.query.pTypeDesc
-       this.subbg = this.$route.query.ProjectGroup
+       this.bg = this.$route.query.pTypeDesc;
+       this.subbg = this.$route.query.ProjectGroup;
        
        /* API Get ticket to authorized tableau */
        axios.get('/genticket')
@@ -37,7 +37,7 @@ export default {
         });
    },
    created() {
-       this.userId = this.$route.query.userId
+       this.userId = this.$route.query.userId;
        /* API Write Log to Use */
        axios.post('/addlogchatbot', {
            name: this.viewname,
@@ -47,7 +47,7 @@ export default {
            console.log(response.data);
        });
    }
-}
+};
 </script>
 
 <style scoped>
