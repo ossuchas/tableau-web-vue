@@ -26,12 +26,7 @@ export default {
        axios.get('/genticket')
         .then(response => {
             var ticket = response.data['message'];
-            var test_url = 'https://tabtesweb.apthai.com/trusted'
-            // var test_url = 'http://dashboard.apthai.com/trusted'
-            // this.url = process.env.VUE_APP_TABLEAU_URL + "/" + ticket + "/t/CRM/views/LLWalkByBG/Res_WalkBG4?:refresh=true&:embed=yes&:toolbar=no&:tabs=no"
-            var text_url = test_url + "/" + ticket + "/t/CRM/views/LLWalkByBG/Res_WalkBG4?:refresh=true&:embed=yes&:toolbar=no&:tabs=no"
-            console.log(text_url)
-            this.url = test_url + "/" + ticket + "/t/CRM/views/LLWalkByBG/Res_WalkBG4?:refresh=true&:embed=yes&:toolbar=no&:tabs=no"
+            this.url = process.env.VUE_APP_TABLEAU_URL + "/" + ticket + "/t/CRM/views/LLWalkByBG/Res_WalkBG4?:refresh=true&:embed=yes&:toolbar=no&:tabs=no"
         });
    },
    created() {
