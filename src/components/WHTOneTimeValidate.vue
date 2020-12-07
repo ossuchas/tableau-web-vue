@@ -84,22 +84,22 @@ export default {
                 calories: '12.04.2020',
                 iron: 'ดาวน์โหลดที่นี่',
             }]
-        }
-    },
-    methods: {
-        submit () {
-            this.check = true
-            console.log('submit + ', this.name)
-        }
+        };
     },
     computed: {
       form () {
         return {
           name: this.name
-        }
+        };
       },
     },
-}
+    methods: {
+        submit () {
+            this.check = true;
+            console.log('submit + ', this.name);
+        }
+    },
+};
 </script>
 
 <style lang="scss" scoped>

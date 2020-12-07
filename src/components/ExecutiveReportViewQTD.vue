@@ -30,7 +30,7 @@ export default {
     };
   },
   created() {
-    this.userId = this.$route.query.userId
+    this.userId = this.$route.query.userId;
     /* API Write Log to Use */
     axios.post("/addlogchatbot", {
       name: this.viewname,
@@ -53,4 +53,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>

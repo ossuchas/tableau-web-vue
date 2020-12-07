@@ -20,10 +20,10 @@ export default {
            url: '',
            bg: '',
            userId: ''
-       }
+       };
    },
    mounted() {
-       this.bg = this.$route.query.pTypeDesc
+       this.bg = this.$route.query.pTypeDesc;
        
        /* API Get ticket to authorized tableau */
        axios.get('/genticket')
@@ -35,7 +35,7 @@ export default {
         });
    },
    created() {
-       this.userId = this.$route.query.userId
+       this.userId = this.$route.query.userId;
        
        /* API Write Log to Use */
        axios.post('/addlogchatbot', {
@@ -46,9 +46,9 @@ export default {
            console.log(response.data);
        });
    }
-}
+};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

@@ -19,18 +19,18 @@ export default {
            ticket: '',
            url: '',
            userid: ''
-       }
+       };
    },
    mounted() {
        /* API Get ticket to authorized tableau */
        axios.get('/genticket')
         .then(response => {
             var ticket = response.data['message'];
-            this.url = process.env.VUE_APP_TABLEAU_URL + "/" + ticket + "/t/CRM/views/ChatbotMonitor/LogChatbotMView?:refresh=true&:embed=yes&:toolbar=no&:tabs=no"
+            this.url = process.env.VUE_APP_TABLEAU_URL + "/" + ticket + "/t/CRM/views/ChatbotMonitor/LogChatbotMView?:refresh=true&:embed=yes&:toolbar=no&:tabs=no";
         });
    },
    created() {
-       this.userId = this.$route.query.userId
+       this.userId = this.$route.query.userId;
        /* API Write Log to Use */
        axios.post('/addlogchatbot', {
            name: this.viewname,
@@ -40,7 +40,7 @@ export default {
        });
    }
     
-}
+};
 </script>
 
 

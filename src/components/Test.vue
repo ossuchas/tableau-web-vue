@@ -66,10 +66,10 @@ export default {
   mounted() {
     // this.parameters = this.$route.query
     // console.log(this.parameters)
-    this.bg = this.$route.query.pTypeDesc
-    this.subbg = this.$route.query.ProjectGroup
+    this.bg = this.$route.query.pTypeDesc;
+    this.subbg = this.$route.query.ProjectGroup;
 
-    console.log(this.bg)
+    console.log(this.bg);
     // this.$store.dispatch('loadTicket');
     // console.log('kai ' + ticket_x);
     // axios.get("/genticket").then((response) => {

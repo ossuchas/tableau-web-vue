@@ -19,10 +19,10 @@ export default {
            ticket: '',
            url: '',
            userid: ''
-       }
+       };
    },
    mounted() {
-       this.userId = this.$route.query.userId
+       this.userId = this.$route.query.userId;
     //    console.log('kai => ' + this.userId)
     //    this.userid = "U087b2673fb770b30b0ff1f8bd2768451"
        /* API Get ticket to authorized tableau */
@@ -33,7 +33,7 @@ export default {
         });
    },
    created() {
-       this.userId = this.$route.query.userId
+       this.userId = this.$route.query.userId;
        /* API Write Log to Use */
        axios.post('/addlogchatbot', {
            name: this.viewname,
@@ -43,9 +43,10 @@ export default {
            console.log(response.data);
        });
    }
-}
+};
 </script>
 
-<style scoped>
+
+<style lang="scss" scoped>
 
 </style>

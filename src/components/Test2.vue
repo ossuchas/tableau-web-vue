@@ -69,14 +69,14 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 export default {
   name: "Test2",
+  components: {
+    FontAwesomeIcon
+  },
   data() {
     return {
       name: "xxx",
     };
   },
-  components: {
-    FontAwesomeIcon
-  }
 };
 </script>
 
