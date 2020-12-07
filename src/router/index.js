@@ -1,7 +1,7 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Test from '../components/Test.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from '../views/Home.vue';
+import Test from '../components/Test.vue';
 import WalkSummary from '../components/WalkSummary.vue';
 import WalkSummaryByBG from '../components/WalkSummaryByBG.vue';
 import WalkSummaryBySubBG from '../components/WalkSummaryBySubBG.vue';
@@ -13,7 +13,7 @@ import WHTOneTimeValidate from '../components/WHTOneTimeValidate.vue';
 import LLDashboardbyProj from '../components/LLDashboardByProj.vue';
 import Test2 from '../components/Test2';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
   const routes = [
   {
@@ -84,12 +84,12 @@ Vue.use(VueRouter)
     name: 'Test2',
     component: Test2
   }
-]
+];
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
-})
+});
 
-export default router
+export default router;
