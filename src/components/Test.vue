@@ -93,8 +93,9 @@ export default {
     viewTableau: function() {
       axios.get("/genticket").then((response) => {
         var ticket = response.data["message"];
+        console.log('ticket is = ' + ticket);
         this.url =
-          "http://dashboard.apthai.com/trusted/" +
+          "https://dashboard.apthai.com/trusted/" +
           ticket +
           "/t/CRM/views/WalkSummaryByBG/DSWalkKPIByProj?:refresh=true&:embed=yes&:toolbar=no&:tabs=no&pTypeDesc=" + this.bg + "&ProjectGroup=" + this.subbg + "&ProjectID=20023";
           // "/t/CRM/views/WalkSummaryByBG/DSWalkKPIBySubBG4Sub?pTypeDesc=2.TH&:iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:showVizHome=no";
