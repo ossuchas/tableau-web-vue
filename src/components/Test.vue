@@ -70,17 +70,6 @@ export default {
     this.subbg = this.$route.query.ProjectGroup;
 
     console.log(this.bg);
-    // this.$store.dispatch('loadTicket');
-    // console.log('kai ' + ticket_x);
-    // axios.get("/genticket").then((response) => {
-    //   // console.log(response)
-    //   var ticket = response.data["message"];
-    //   // this.url = "http://dashboard.apthai.com/trusted/" + response.data['message']+ "/t/CRM/views/LLWalkByBG/Res_WalkBG2?:refresh=true&:embed=yes&:toolbar=no&:tabs=no"
-    //   this.url =
-    //     "http://dashboard.apthai.com/trusted/" +
-    //     ticket +
-    //     "/t/CRM/views/LLWalkByBG/Res_WalkBG3?:refresh=true&:embed=yes&:toolbar=no&:tabs=no";
-    // });
   },
   methods: {
     clickMethod: function(value) {
