@@ -49,17 +49,7 @@ export default {
             .getProfile()
             .then((profile) => {
               this.userId = profile.userId;
-            })
-            .catch((err) => {
-              console.error(err);
-            });
-        } else {
-          console.log("LIFF is not logged in");
-        }
-      })
-      .catch((err) => {
-        console.error("Error initialize LIFF: ", err);
-      });
+              
               console.log(this.userId);
               /* API Get ticket to authorized tableau */
               axios.get("/genticket").then((response) => {
@@ -72,6 +62,17 @@ export default {
                   this.ticket +
                   "/t/CRM/views/WalkSummaryByBG/DSWalkKPIByBG?:refresh=true&:embed=yes&:toolbar=no&:tabs=no";
               });
+            })
+            .catch((err) => {
+              console.error(err);
+            });
+        } else {
+          console.log("LIFF is not logged in");
+        }
+      })
+      .catch((err) => {
+        console.error("Error initialize LIFF: ", err);
+      });
   },
 };
 </script>
