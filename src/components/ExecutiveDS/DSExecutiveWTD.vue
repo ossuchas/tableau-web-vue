@@ -1,9 +1,5 @@
 <template>
-  <v-content>
-    <!-- <v-card>
-      <v-card-text>Hello World</v-card-text>
-      {{ userId }}
-    </v-card> -->
+  <v-container>
     <v-row class="text-center">
       <v-col cols="12">
         <iframe
@@ -17,7 +13,7 @@
         ></iframe>
       </v-col>
     </v-row>
-  </v-content>
+  </v-container>
 </template>
 
 <script>
