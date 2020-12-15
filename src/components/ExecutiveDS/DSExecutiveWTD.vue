@@ -1,9 +1,9 @@
 <template>
   <v-content>
-    <v-card>
+    <!-- <v-card>
       <v-card-text>Hello World</v-card-text>
       {{ userId }}
-    </v-card>
+    </v-card> -->
     <v-row class="text-center">
       <v-col cols="12">
         <iframe
@@ -50,7 +50,6 @@ export default {
             .then((profile) => {
               this.userId = profile.userId;
               
-              console.log(this.userId);
               /* API Get ticket to authorized tableau */
               axios.get("/genticket").then((response) => {
                 this.ticket = response.data["message"];
@@ -60,7 +59,7 @@ export default {
                   process.env.VUE_APP_TABLEAU_URL +
                   "/" +
                   this.ticket +
-                  "/t/CRM/views/DSExecutiveDaily/DSExDaily?:refresh=true&:embed=yes&:toolbar=no&:tabs=no";
+                  "/t/CRM/views/DSExecutiveDaily/DSExDaily?:refresh=true&:embed=yes&:toolbar=no&:tabs=no&p_param1=" + this.userId;
               });
             })
             .catch((err) => {
