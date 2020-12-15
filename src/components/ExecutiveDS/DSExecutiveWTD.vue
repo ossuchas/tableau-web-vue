@@ -60,7 +60,7 @@ export default {
                   process.env.VUE_APP_TABLEAU_URL +
                   "/" +
                   this.ticket +
-                  "/t/CRM/views/WalkSummaryByBG/DSWalkKPIByBG?:refresh=true&:embed=yes&:toolbar=no&:tabs=no";
+                  "/t/CRM/views/DSExecutiveDaily/DSExDaily?:refresh=true&:embed=yes&:toolbar=no&:tabs=no";
               });
             })
             .catch((err) => {
