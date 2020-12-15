@@ -13,6 +13,9 @@ import WHTOneTimeValidate from '../components/WHTOneTimeValidate.vue';
 import LLDashboardbyProj from '../components/LLDashboardByProj.vue';
 import Test2 from '../components/Test2';
 
+// Executive Folder Dashboard
+import DSExecutiveWTD from '../components/ExecutiveDS/DSExecutiveWTD.vue';
+
 Vue.use(VueRouter);
 
   const routes = [
@@ -83,6 +86,11 @@ Vue.use(VueRouter);
     path: '/test2',
     name: 'Test2',
     component: Test2
+  },
+  {
+    path: '/ex/dsexwtd',
+    name: 'DSExecutiveWTD',
+    component: DSExecutiveWTD
   }
 ];
 
