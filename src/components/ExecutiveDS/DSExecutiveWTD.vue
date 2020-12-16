@@ -63,6 +63,18 @@ export default {
             });
         } else {
           console.log("LIFF is not logged in");
+              
+              /* API Get ticket to authorized tableau */
+              axios.get("/genticket").then((response) => {
+                this.ticket = response.data["message"];
+                console.log(this.ticket);
+                
+                this.url =
+                  process.env.VUE_APP_TABLEAU_URL +
+                  "/" +
+                  this.ticket +
+                  "/t/CRM/views/DSExecutiveDaily/DSExDaily?:refresh=true&:embed=yes&:toolbar=no&:tabs=no&:render=false&p_param1=" + this.userId;
+              });
         }
       })
       .catch((err) => {
@@ -71,3 +83,6 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+</style>
