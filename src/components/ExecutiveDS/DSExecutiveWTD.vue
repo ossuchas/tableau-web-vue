@@ -45,6 +45,15 @@ export default {
             .getProfile()
             .then((profile) => {
               this.userId = profile.userId;
+    
+              /* API Write Log to Use */
+              axios.post('/addlogchatbot', {
+                name: this.viewname,
+                userid: this.userId
+              })
+              .then(response => {
+                console.log(response.data);
+              });
               
               /* API Get ticket to authorized tableau */
               axios.get("/genticket").then((response) => {
@@ -81,6 +90,17 @@ export default {
         console.error("Error initialize LIFF: ", err);
       });
   },
+  // created() {
+  //   this.userId = this.$route.query.userId;
+  //   /* API Write Log to Use */
+  //   axios.post('/addlogchatbot', {
+  //     name: this.viewname,
+  //     userid: this.userId
+  //     })
+  //     .then(response => {
+  //       console.log(response.data);
+  //     });
+  // }
 };
 </script>
 
