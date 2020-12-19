@@ -6,7 +6,7 @@
           class="embed-responsive-item resp-iframe"
           :src="url"
           width="375"
-          height="1000px"
+          height="1500px"
           frameborder="0"
           scrolling="no"
           allowfullscreen
