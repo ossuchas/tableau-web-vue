@@ -16,6 +16,10 @@ import Test2 from '../components/Test2';
 // Executive Folder Dashboard
 import DSExecutiveWTD from '../components/ExecutiveDS/DSExecutiveWTD.vue';
 
+// Performance LCM Dashboard
+// import DSPerformanceLCM from '../components/Performance/DSPerformanceLCM.vue';
+import DSPerformanceLCM from '../components/PerformanceLCM/DSPerformanceLCM.vue';
+
 Vue.use(VueRouter);
 
   const routes = [
@@ -91,6 +95,11 @@ Vue.use(VueRouter);
     path: '/ex/dsexwtd',
     name: 'DSExecutiveWTD',
     component: DSExecutiveWTD
+  },
+  {
+    path: '/lcm/performance',
+    name: 'DSPerformanceLCM',
+    component: DSPerformanceLCM
   }
 ];
 
