@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <v-row class="text-center">
-      <v-col cols="12">
+    <!-- <v-row class="text-center">
+      <v-col cols="12"> -->
         <iframe
           class="embed-responsive-item resp-iframe"
           :src="url"
@@ -11,8 +11,8 @@
           scrolling="no"
           allowfullscreen
         ></iframe>
-      </v-col>
-    </v-row>
+      <!-- </v-col>
+    </v-row> -->
   </v-container>
 </template>
 
