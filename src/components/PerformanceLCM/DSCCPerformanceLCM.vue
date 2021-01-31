@@ -35,7 +35,7 @@ export default {
   mounted() {
     liff
       .init({
-        liffId: "1653928950-pYzZ4L02",
+        liffId: "1653928950-lBNW8orG",
       })
       .then(() => {
         console.log("LIFF initialize finished");
