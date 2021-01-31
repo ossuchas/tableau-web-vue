@@ -17,8 +17,8 @@ import Test2 from '../components/Test2';
 import DSExecutiveWTD from '../components/ExecutiveDS/DSExecutiveWTD.vue';
 
 // Performance LCM Dashboard
-// import DSPerformanceLCM from '../components/Performance/DSPerformanceLCM.vue';
-import DSPerformanceLCM from '../components/PerformanceLCM/DSPerformanceLCM.vue';
+import DSBLPerformanceLCM from '../components/PerformanceLCM/DSBLPerformanceLCM.vue';
+import DSCCPerformanceLCM from '../components/PerformanceLCM/DSCCPerformanceLCM.vue';
 
 Vue.use(VueRouter);
 
@@ -97,9 +97,14 @@ Vue.use(VueRouter);
     component: DSExecutiveWTD
   },
   {
-    path: '/lcm/performance',
-    name: 'DSPerformanceLCM',
-    component: DSPerformanceLCM
+    path: '/bl/performance',
+    name: 'DSBLPerformanceLCM',
+    component: DSBLPerformanceLCM
+  },
+  {
+    path: '/cc/performance',
+    name: 'DSCCPerformanceLCM',
+    component: DSCCPerformanceLCM
   }
 ];
 

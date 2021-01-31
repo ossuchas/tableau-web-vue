@@ -6,7 +6,7 @@
           class="embed-responsive-item resp-iframe"
           :src="url"
           width="375"
-          height="1800px"
+          height="700px"
           frameborder="0"
           scrolling="no"
           allowfullscreen
@@ -21,13 +21,13 @@ import liff from "@line/liff";
 import axios from "axios";
 
 export default {
-  name: "DSPerformanceLCM",
+  name: "DSCCPerformanceLCM",
   components: {},
   data() {
     return {
-      name: "DSPerformanceLCM",
-      userId: "",
-      viewname: "Dashboard Performance LCM",
+      name: "DSCCPerformanceLCM",
+      userId: "Uc7494761328a3ec1970287ed59cc7a0a",
+      viewname: "Dashboard CC Performance LCM",
       ticket: "",
       url: "",
     };
@@ -64,8 +64,7 @@ export default {
                   process.env.VUE_APP_TABLEAU_URL +
                   "/" +
                   this.ticket +
-                  // "/t/CRM/views/DSExecutiveDaily/DSExDaily?:refresh=true&:embed=yes&:toolbar=no&:tabs=no&p_param1=" + this.userId;
-                  "/t/CRM/views/LCMLCPerformance/DSPerformanceLCM?:refresh=true&:embed=yes&:toolbar=no&:tabs=no&p_param1=" + this.userId;
+                  "/t/CRM/views/ChatbotPerformanceLCM/DSCCPerformanceLCM?:refresh=true&:embed=yes&:toolbar=no&:tabs=no&p_param1=" + this.userId;
               });
             })
             .catch((err) => {
@@ -83,7 +82,7 @@ export default {
                   process.env.VUE_APP_TABLEAU_URL +
                   "/" +
                   this.ticket +
-                  "/t/CRM/views/LCMLCPerformance/DSPerformanceLCM?:refresh=true&:embed=yes&:toolbar=no&:tabs=no&:render=false&p_param1=" + this.userId;
+                  "/t/CRM/views/ChatbotPerformanceLCM/DSCCPerformanceLCM?:refresh=true&:embed=yes&:toolbar=no&:tabs=no&:render=false&p_param1=" + this.userId;
               });
         }
       })
