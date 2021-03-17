@@ -16,9 +16,10 @@ import Test2 from '../components/Test2';
 // Executive Folder Dashboard
 import DSExecutiveWTD from '../components/ExecutiveDS/DSExecutiveWTD.vue';
 
-// Performance LCM Dashboard
+// Performance LCM Dashboard for BG1
 import DSBLPerformanceLCM from '../components/PerformanceLCM/DSBLPerformanceLCM.vue';
 import DSCCPerformanceLCM from '../components/PerformanceLCM/DSCCPerformanceLCM.vue';
+import DSBG1BLBySubBG from '../components/PerformanceLCM/DSBG1BLBySubBG.vue';
 
 Vue.use(VueRouter);
 
@@ -105,6 +106,11 @@ Vue.use(VueRouter);
     path: '/cc/performance',
     name: 'DSCCPerformanceLCM',
     component: DSCCPerformanceLCM
+  },
+  {
+    path: '/bg1/bl/bysubbg',
+    name: 'DSBG1BLBySubBG',
+    component: DSBG1BLBySubBG
   }
 ];
 
