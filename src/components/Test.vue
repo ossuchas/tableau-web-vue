@@ -80,14 +80,18 @@ export default {
       }
     },
     viewTableau: function() {
-      axios.get("/genticket").then((response) => {
+      axios.get("https://test-apchatbotapi.apthai.com/api/v1/gettableauticket").then((response) => {
         var ticket = response.data["message"];
         console.log('ticket is = ' + ticket);
         this.url =
-          "https://dashboard.apthai.com/trusted/" +
+          "https://tbsvr.apthai.com/trusted/" +
           ticket +
-          "/t/CRM/views/WalkSummaryByBG/DSWalkKPIByProj?:refresh=true&:embed=yes&:toolbar=no&:tabs=no&pTypeDesc=" + this.bg + "&ProjectGroup=" + this.subbg + "&ProjectID=20023";
+          // "/views/DashboardLeadLag/DSLeadLagAllBG?:refresh=true&:embed=yes&:toolbar=no&:tabs=no";
+          "/views/LCMLCPerformance/DSSummarySubBG?:refresh=true&:embed=yes&:toolbar=no&:tabs=no";
+          // "/views/Check_Data_ByProject_performanace_v2_0/Dashboard1?:refresh=true&:embed=yes&:toolbar=no&:tabs=no";
           // "/t/CRM/views/WalkSummaryByBG/DSWalkKPIBySubBG4Sub?pTypeDesc=2.TH&:iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:showVizHome=no";
+        
+        console.log(this.url);
       });
     },
   },
