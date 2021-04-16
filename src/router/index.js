@@ -15,6 +15,7 @@ import Test2 from '../components/Test2';
 
 // Executive Folder Dashboard
 import DSExecutiveWTD from '../components/ExecutiveDS/DSExecutiveWTD.vue';
+import DSExecutiveBG2GCN from '../components/ExecutiveDS/DSExecutiveBG2GCN.vue';
 
 // Performance LCM Dashboard for BG1
 import DSBLPerformanceLCM from '../components/PerformanceLCM/DSBLPerformanceLCM.vue';
@@ -96,6 +97,11 @@ Vue.use(VueRouter);
     path: '/ex/dsexwtd',
     name: 'DSExecutiveWTD',
     component: DSExecutiveWTD
+  },
+  {
+    path: '/ex/bg2summarygcn',
+    name: 'DSExecutiveBG2GCN',
+    component: DSExecutiveBG2GCN
   },
   {
     path: '/bl/performance',
