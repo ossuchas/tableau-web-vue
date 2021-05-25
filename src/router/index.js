@@ -22,6 +22,9 @@ import DSBLPerformanceLCM from '../components/PerformanceLCM/DSBLPerformanceLCM.
 import DSCCPerformanceLCM from '../components/PerformanceLCM/DSCCPerformanceLCM.vue';
 import DSBG1BLBySubBG from '../components/PerformanceLCM/DSBG1BLBySubBG.vue';
 
+// Promotion
+import EvoucherTrue from '../components/Promotion/EvoucherTrue.vue';
+
 Vue.use(VueRouter);
 
   const routes = [
@@ -117,6 +120,11 @@ Vue.use(VueRouter);
     path: '/bg1/bl/bysubbg',
     name: 'DSBG1BLBySubBG',
     component: DSBG1BLBySubBG
+  },
+  {
+    path: '/prom',
+    name: 'EvoucherTrue',
+    component: EvoucherTrue
   }
 ];
 
