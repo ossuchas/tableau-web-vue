@@ -122,7 +122,7 @@ Vue.use(VueRouter);
     component: DSBG1BLBySubBG
   },
   {
-    path: '/prom',
+    path: '/promtrue',
     name: 'EvoucherTrue',
     component: EvoucherTrue
   }
