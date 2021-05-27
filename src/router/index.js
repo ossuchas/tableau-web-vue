@@ -24,6 +24,7 @@ import DSBG1BLBySubBG from '../components/PerformanceLCM/DSBG1BLBySubBG.vue';
 
 // Promotion
 import EvoucherTrue from '../components/Promotion/EvoucherTrue.vue';
+import EvoucherTrueTest from '../components/Promotion/EvoucherTrueTest.vue';
 
 Vue.use(VueRouter);
 
@@ -125,6 +126,11 @@ Vue.use(VueRouter);
     path: '/promtrue',
     name: 'EvoucherTrue',
     component: EvoucherTrue
+  },
+  {
+    path: '/promtruetest',
+    name: 'EvoucherTrueTest',
+    component: EvoucherTrueTest
   }
 ];
 
