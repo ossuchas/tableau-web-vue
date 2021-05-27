@@ -33,7 +33,7 @@
       </v-img>
       <v-chip class="ma-2" color="#c92028" label text-color="white">
         <v-icon left> mdi-label </v-icon>
-        Code : tEwEqdmXAlXGPErJ
+        Code : {{ code }}
       <div class="white--text ml-5 caption">
                       Exp. 31.12.2021
                     </div>
