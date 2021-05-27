@@ -1,33 +1,16 @@
 <template>
   <v-container>
-    <v-card class="mx-auto" max-width="344">
-      <v-img
-        class="white--text align-end"
-        src="https://i.ibb.co/tQcXPw1/E-Voucher-1-2x.jpg"
-        height="500px"
-      >
-      <v-list-item two-line>
-      <v-list-item-content>
-        <v-list-item-title class="white--text headline2">
-          Code : QBYHRPjmiVgroBgJ
-        </v-list-item-title>
-        <div class="white--text overline">
-          EXP. 31.12.2022
-        </div>
-      </v-list-item-content>
-
-      <v-list-item-avatar
-        tile
-        size="40"
-      >
-            <img
-              src="https://media.nj.com/business_impact/photo/hoffman-q-r-codejpg-175b88c078d3a00e.jpg"
-              width="50px"
-              height="50px"
-            />
-      </v-list-item-avatar>
-    </v-list-item>
-      <!-- <v-avatar
+    <v-card class="mx-auto" max-width="345">
+      <v-img class="white--text align-end" :src="img_src_url" height="490px">
+        <!-- <v-list-item two-line>
+          <v-list-item-content>
+            <v-list-item-title class="white--text headline2">
+              Code : QBYHRPjmiVgroBgJ
+            </v-list-item-title>
+            <div class="white--text overline">EXP. 31.12.2022</div>
+          </v-list-item-content>
+        </v-list-item> -->
+        <!-- <v-avatar
       tile
       color="blue"
       class="mr-10"
@@ -48,10 +31,13 @@
           <p class="mr-3">John Doe</p> -->
         <v-row align="center" justify="end"> </v-row>
       </v-img>
-
-      <!-- <v-card-title> Top western road trips </v-card-title> -->
-
-      <!-- <v-card-subtitle> {{ proj }} </v-card-subtitle> -->
+      <v-chip class="ma-2" color="#c92028" label text-color="white">
+        <v-icon left> mdi-label </v-icon>
+        Code : tEwEqdmXAlXGPErJ
+      <div class="white--text ml-5 caption">
+                      Exp. 31.12.2021
+                    </div>
+      </v-chip>
     </v-card>
   </v-container>
 </template>
@@ -67,13 +53,19 @@ export default {
       name: "EvoucherTrue",
       code: "",
       proj: "",
+      img_src_url: "",
     };
   },
   created() {
     this.code = this.$route.query.code;
     this.proj = this.$route.query.proj;
-    console.log(this.code, this.proj);
 
+    if (this.proj == "60022") {
+      this.img_src_url = "https://i.ibb.co/M8vHKd1/60022.jpg";
+    } else {
+      this.img_src_url = "https://i.ibb.co/dgzWC4V/60019.jpg";
+    }
+    console.log(this.code, this.proj, this.img_src_url);
     /* API Write Log to Use */
     // axios
     //   .post("/addlogchatbot", {
