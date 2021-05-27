@@ -35,7 +35,7 @@
         <v-icon left> mdi-label </v-icon>
         Code : {{ code }}
       <div class="white--text ml-5 caption">
-                      Exp. 31.12.2021
+                      Exp. 31.12.2022
                     </div>
       </v-chip>
     </v-card>
