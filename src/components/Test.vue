@@ -87,7 +87,7 @@ export default {
           "https://tbsvr.apthai.com/trusted/" +
           ticket +
           // "/views/DashboardLeadLag/DSLeadLagAllBG?:refresh=true&:embed=yes&:toolbar=no&:tabs=no";
-          "/views/Chatobt_BG1Performance/DSBLbySubBG?:refresh=true&:embed=yes&:toolbar=no&:tabs=no";
+          "/views/ReportPortalLog/DSReportLog?:refresh=true&:embed=yes&:toolbar=no&:tabs=no";
           // "/views/Check_Data_ByProject_performanace_v2_0/Dashboard1?:refresh=true&:embed=yes&:toolbar=no&:tabs=no";
           // "/t/CRM/views/WalkSummaryByBG/DSWalkKPIBySubBG4Sub?pTypeDesc=2.TH&:iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:showVizHome=no";
         
